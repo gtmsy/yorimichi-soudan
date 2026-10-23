@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="#f5f7f3" name="theme-color"/><title>よりみち相談ガイド｜悩みから相談先を探す</title>
+<style>
+:root{--ink:#263a35;--muted:#687873;--paper:#fbfcf8;--green:#dce9df;--dark:#416b59;--line:#e3e9e1}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:16px}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.75}
+header,main,footer{max-width:1050px;margin:auto;padding-left:20px;padding-right:20px}.top{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}.brand{font-weight:800;text-decoration:none;color:var(--ink)}.mark{display:inline-block;background:var(--green);color:var(--dark);border-radius:12px;padding:4px 9px;margin-right:8px}.top a:last-child{font-size:13px;color:var(--muted)}
+.hero{padding:30px 0 38px}.eyebrow{font-size:11px;letter-spacing:.15em;font-weight:800;color:var(--dark);margin:0 0 8px}h1{font-size:clamp(34px,7vw,54px);line-height:1.25;margin:0 0 16px}h1 span{color:var(--dark)}h2{font-size:clamp(22px,5vw,29px);line-height:1.4;margin:0 0 10px}.lead,.muted{color:var(--muted)}.btn{display:inline-block;background:var(--dark);color:white;text-decoration:none;border-radius:30px;padding:10px 18px;font-weight:700}
+section{padding:34px 0;border-top:1px solid var(--line)}.center{text-align:center;margin-bottom:24px}.topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.topic{display:block;background:white;border:1px solid var(--line);border-radius:14px;padding:15px;text-align:left;min-height:110px;text-decoration:none;color:var(--ink)}.topic:active,.topic:focus{border-color:var(--dark);background:#edf4ee}.ico{font-size:22px;display:block}.topic strong{display:block;font-size:14px}.topic small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.results{background:#f0f5ef;margin:0 -20px;padding:30px 20px}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{background:white;border:1px solid var(--line);border-radius:14px;padding:16px;overflow-wrap:anywhere}.card h3{font-size:15px;line-height:1.5;margin:6px 0}.card p{font-size:13px;color:var(--muted);margin:0 0 10px}.card a{color:var(--dark);font-size:13px;font-weight:700}.tag{font-size:10px;color:var(--dark);font-weight:800}.back{display:inline-block;margin:18px 0 0;color:var(--dark);font-weight:700}footer{display:flex;justify-content:space-between;gap:10px;background:#eaf0e8;color:#65796a;font-size:12px;padding-top:20px;padding-bottom:20px}.note{font-size:12px;color:var(--muted);margin-top:18px}
+@media(min-width:700px){.topics{grid-template-columns:repeat(3,minmax(0,1fr))}.cards{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding:45px 0}.results{margin:0;padding:34px;border-radius:18px}}
+</style>
+<style>
+:root {
+  --ink: #27334a;
+  --muted: #667085;
+  --paper: #fffdf8;
+  --panel: #ffffff;
+  --line: #e7e4dc;
+  --accent: #5269b5;
+  --accent-soft: #eef0ff;
+  --mint: #e7f6ef;
+  --peach: #fff0e7;
+  --yellow: #fff6d8;
+}
+body {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", Meiryo, sans-serif !important;
+  line-height: 1.85 !important;
+  letter-spacing: .015em;
+}
+header, .hero, main, section, article, .container {
+  max-width: 900px;
+}
+h1, h2, h3 {
+  color: var(--ink) !important;
+  line-height: 1.5 !important;
+  letter-spacing: .01em;
+}
+h1 { font-size: clamp(1.8rem, 6vw, 2.8rem) !important; }
+h2 { font-size: clamp(1.25rem, 4vw, 1.65rem) !important; }
+p, li { line-height: 1.9 !important; }
+a, button, .button, .btn {
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+a.button, a.btn, button, .button, .btn {
+  border-radius: 18px !important;
+  padding: .8rem 1rem !important;
+  font-weight: 650 !important;
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #f1b94d;
+  outline-offset: 3px;
+}
+section, article, .card, .panel, .step, .choice, .contact, .box {
+  border-radius: 20px !important;
+}
+.card, .panel, .step, .choice, .contact, .box {
+  border: 1px solid var(--line);
+  box-shadow: 0 3px 12px rgba(39, 51, 74, .045);
+}
+small, .muted, .note { color: var(--muted) !important; }
+@media (max-width: 600px) {
+  body { padding-left: 16px !important; padding-right: 16px !important; }
+  main { padding-top: 1rem !important; }
+  a.button, a.btn, button, .button, .btn { width: 100%; box-sizing: border-box; }
+}
+</style>
+<style>
+.friendly-lead {
+  margin: 1rem 0 1.6rem;
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  background: linear-gradient(120deg, #eef0ff, #e7f6ef);
+  color: #35415b;
+  font-size: 1.05rem;
+}
+.friendly-lead small { display: inline-block; margin-top: .25rem; font-size: .88rem; }
+</style>
+<style>
+.header-explainer{margin:0 auto 0 1rem;max-width:390px;font-size:.92rem;line-height:1.5;color:var(--muted);font-weight:600}
+header.top{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+@media(max-width:600px){.header-explainer{order:3;width:100%;max-width:none;margin:.3rem 0 0;font-size:.88rem}header.top{gap:.55rem}}
+</style></head><body><header class="top"><a class="brand" href="#top"><span class="mark">より</span>よりみち相談ガイド</a><p class="header-explainer">気になる悩みを選ぶと、相談先のヒントが見つかります。</p><a href="#about">このサイトについて</a></header><main id="top"><section id="choose"><div class="center"><h2>今、気になっていること・心配なことは？</h2><p class="muted">気になる項目を選ぶと、そのテーマのページで相談先を確認できます。</p></div><div class="topics"><a class="topic" href="feelings.html"><span class="ico">☁️</span><strong>気持ち・こころ</strong><small>不安、落ち込み、やる気が出ない</small></a><a class="topic" href="friends.html"><span class="ico">🫶</span><strong>友だち・人間関係</strong><small>友人関係、孤独、距離感</small></a><a class="topic" href="school.html"><span class="ico">📚</span><strong>学校・進路</strong><small>勉強、登校、将来のこと</small></a><a class="topic" href="home.html"><span class="ico">🏠</span><strong>家族・家のこと</strong><small>家族との関係、家での居づらさ</small></a><a class="topic" href="body.html"><span class="ico">🌿</span><strong>体・生活のこと</strong><small>睡眠、体調、生活リズム</small></a><a class="topic" href="other.html"><span class="ico">💬</span><strong>うまく説明できない</strong><small>理由は分からないけど、つらい</small></a><a class="topic" href="identity.html"><span class="ico">🌈</span><strong>自分らしさ・性のこと</strong><small>人に話しづらい、自分のことで悩む</small></a><a class="topic" href="life.html"><span class="ico">🧭</span><strong>お金・暮らし・将来</strong><small>生活のこと、働くこと、先が不安</small></a></div></section><section id="about"><h2>このサイトについて</h2><p class="muted">このサイトは、本人や周りの人が、悩みを整理し相談先を考えるための入口です。医療的な診断や個別の専門相談の代わりではありません。受付時間や対象年齢は変更されることがあるため、利用前に公式情報を確認してください。</p><p class="note">この試作品は個人情報を入力・保存しません。生徒本人だけでなく、家族・友人・教職員・地域の人なども利用できます。学校独自の相談先は、公開前に担当者と確認して追加してください。</p></section></main><footer><span>よりみち相談ガイド</span><span>あなたのペースで、一歩ずつ。</span></footer></body></html>
