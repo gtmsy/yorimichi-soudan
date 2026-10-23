@@ -1,1 +1,0 @@
-# yorimichi-soudan
